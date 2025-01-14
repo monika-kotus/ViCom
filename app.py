@@ -595,4 +595,3 @@ else:
 address = st.get_option("server.address") or "localhost"
 port = st.get_option("server.port") or "8501"
 url = f"http://{address}:{port}"
-st.markdown(f"**Your app is running at:** [ {url} ]({url})")
