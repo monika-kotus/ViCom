@@ -2,9 +2,7 @@
 
 ViCom CollabMap is a data science project designed to visually present existing collaborations within the ViCom research group and uncover potential new connections. This project processes researcher data, extracts expertise, and generates potential collaborations, all presented in an interactive web-based map.
 
-# ViCom CollabMap
-
-Sometimes you just want to know who else is quietly exploring **eye-tracking** or deep into **Bayesian stats**—without turning into Sherlock Holmes. **ViCom CollabMap** is here to save the day, letting you see where collaborations already exist, and where they might blossom if only you knew the right people.
+Sometimes, you want to know who else is quietly exploring **eye-tracking** or deep into **Bayesian stats**—without turning into Sherlock Holmes. **ViCom CollabMap** is here to save the day, letting you see where collaborations already exist and where they might blossom if only you knew the right people.
 
 *(P.S. This entire project was built in just three weeks. So please forgive the occasional quirk or feature that’s still “under construction.”)*
 
@@ -50,10 +48,10 @@ This project was completed over the span of **3 weeks**, primarily focusing on d
    Publications were cleaned for duplicates, missing titles, etc., and merged with geolocation data for each researcher.
 
 3. **Expertise Extraction**  
-   **OpenAI** was then employed to read through abstracts and produce relevant themes and expertise keywords. Because who doesn’t want a robot telling us our life’s work in bullet points?
+   **OpenAI** was then employed to read through abstracts and produce relevant themes and expert keywords. Who doesn’t want a robot telling us our life’s work in bullet points?
 
 4. **Similarity Computation**  
-   We tally up how many keywords each pair of researchers share—like counting how many matching socks you’ve got in the laundry.
+   We tally up how many keywords each pair of researchers shares—like counting how many matching socks you’ve got in the laundry.
 
 5. **Web App Visualization**  
    Finally, we created a **Streamlit** + **Folium** web app to:
@@ -70,7 +68,7 @@ This project was completed over the span of **3 weeks**, primarily focusing on d
 2. **Process:**  
    - Queries **OpenAlex** for each name.
    - Fetches publication data (title, abstract, authors, year) from the last 5 years.
-   - Reconstructs abstracts from OpenAlex’s “inverted index” (like puzzle-solving with words).
+   - Reconstruct abstracts from OpenAlex’s “inverted index” (like puzzle-solving with words).
 3. **Output:** A CSV (`03.ViCom_Publications_OpenAlex.csv`) with all the extracted data.
 
 ### 03.Clean_Publication_data.ipynb
@@ -91,7 +89,7 @@ This project was completed over the span of **3 weeks**, primarily focusing on d
 ### 05.Clean_OpenAI_data.ipynb
 1. **Input:** The raw OpenAI keyword data.  
 2. **Process:**  
-   - Applies synonyms (merging “sign-language” with “sign language,” etc.).
+   - Applies synonyms (merging “sign language” with “sign language,” etc.).
    - Uses fuzzy matching to remove near-duplicates.
    - Drops generic or irrelevant terms (“education,” “research focus,” etc.).
 3. **Output:** A tidy CSV (`08.researchers_with_themes_expertise_cleaned.csv`) with standardized keywords.
@@ -99,7 +97,7 @@ This project was completed over the span of **3 weeks**, primarily focusing on d
 ### 06.Similarity.ipynb
 1. **Input:** Cleaned expertise data.  
 2. **Process:**  
-   - For each pair of researchers, counts overlapping keywords (Themes + Expertise).
+   - For each pair of researchers, count overlapping keywords (Themes + Expertise).
    - Saves the synergy count and the list of matching keywords (like “EEG,” “lexical semantics,” etc.).
 3. **Output:** A CSV (`09.potential_collaborations.csv`) listing synergy scores for every possible pair.
 
