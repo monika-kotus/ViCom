@@ -51,10 +51,10 @@ This project was completed over the span of **3 weeks**, primarily focusing on d
    **OpenAI** was then employed to read through abstracts and produce relevant themes and expert keywords. Who doesn’t want a robot telling us our life’s work in bullet points?
 
 4. **Similarity Computation**  
-   We tally up how many keywords each pair of researchers shares—like counting how many matching socks you’ve got in the laundry.
+  I tally up how many keywords each pair of researchers shares—like counting how many matching socks you’ve got in the laundry.
 
 5. **Web App Visualization**  
-   Finally, we created a **Streamlit** + **Folium** web app to:
+   Finally, I created a **Streamlit** + **Folium** web app to:
    - Show a map of where each researcher is located.
    - Draw lines for existing collaborations (blue/green lines).
    - Visualize potential collaborations via purple arcs.
@@ -161,7 +161,7 @@ Some researchers may genuinely not have entries in OpenAlex or have incomplete i
 ## Improvement Ideas
 
 ### Smarter Keywords
-Right now, we rely on GPT for keywords. You could integrate domain-specific dictionaries or trained classifiers for more accuracy.
+Right now, I rely on GPT for keywords. You could integrate domain-specific dictionaries or trained classifiers for more accuracy.
 
 ### Extended Publications
 For older or specialized data, consider using other APIs (e.g., PubMed, CrossRef) to widen the publication range.
@@ -170,7 +170,7 @@ For older or specialized data, consider using other APIs (e.g., PubMed, CrossRef
 Let users filter by “department,” “method,” or “region.” Not everyone enjoys endless scrolling.
 
 ### Automated Pipelines
-Use GitLab CI or GitHub Actions to refresh the data nightly so you’re always up-to-date with the newest preprints.
+Use GitLab CI or GitHub Actions to refresh the data nightly, so you’re always up-to-date with the newest preprints.
 
 ### Better UI
 If you have a knack for design, feel free to refactor the interface for a more polished (or simpler) look.
