@@ -4,7 +4,19 @@ ViCom CollabMap is a data science project designed to visually present existing 
 
 Sometimes, you want to know who else is quietly exploring **eye-tracking** or deep into **Bayesian stats**—without turning into Sherlock Holmes. **ViCom CollabMap** is here to save the day, letting you see where collaborations already exist and where they might blossom if only you knew the right people.
 
+### Tools and Techniques Used
+- **Python**: Core language for all data processing.
+- **Jupyter Notebooks**: For step-by-step data extraction and cleaning.
+- **APIs**: 
+  - **OpenAlex API** for fetching publication data.
+  - **OpenAI API** for extracting expertise and keywords using NLP.
+- **Streamlit**: To build the interactive web app.
+- **Folium**: For creating dynamic, interactive maps.
+- **Pandas & NumPy**: For data manipulation and analysis.
+- **Fuzzy Matching** (via FuzzyWuzzy): To handle similar keywords and standardize terms.
+
 *(P.S. This entire project was built in just three weeks. So please forgive the occasional quirk or feature that’s still “under construction.”)*
+
 
 ---
 
